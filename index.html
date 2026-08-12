@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GarPadel Indoor - Centro de Pádel en Valdemoro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Cabecera y navegación -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🎾</span>
+        <span class="logo-text">GarPadel <strong>Indoor</strong></span>
+      </div>
+      <nav class="nav">
+        <a href="#centro">El Centro</a>
+        <a href="#ranking">Ranking</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Tu centro de pádel indoor en Valdemoro</h1>
+      <p>Reserva de pistas, escuela de pádel, torneos y ranking anual</p>
+      <a href="#contacto" class="btn">Reserva tu pista</a>
+    </div>
+  </section>
+
+  <!-- Descripción del centro -->
+  <section id="centro" class="section">
+    <div class="container">
+      <h2>El Centro</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">🏟️</div>
+          <h3>Instalaciones modernas</h3>
+          <p>Pistas de pádel indoor totalmente equipadas para que juegues en cualquier época del año, sin depender del tiempo.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Reserva desde tu móvil</h3>
+          <p>Reserva pistas, crea partidos y contacta con otros usuarios cómodamente desde nuestra aplicación móvil.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Escuela de pádel</h3>
+          <p>Clases para niños, jóvenes y adultos con grupos reducidos y atención personalizada. ¡Inscripciones abiertas!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ranking -->
+  <section id="ranking" class="section section-alt">
+    <div class="container">
+      <h2>Ranking Pádel 2026</h2>
+      <p class="section-intro">
+        Participa en nuestro ranking anual: 1 ó 2 torneos al mes con actualización de posiciones.
+        <br />Del <strong>24/01/2026</strong> al <strong>26/12/2026</strong>.
+      </p>
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>Pos.</th>
+            <th>Jugador</th>
+            <th>Nivel</th>
+            <th>Puntos</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-body">
+          <tr><td colspan="4">Cargando ranking…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Horarios -->
+  <section id="horarios" class="section">
+    <div class="container">
+      <h2>Horarios</h2>
+      <div class="grid grid-2 horarios">
+        <div class="card horario-card">
+          <div class="card-icon">🌅</div>
+          <h3>Mañanas</h3>
+          <p class="horario-hora">9:30 h — 14:00 h</p>
+        </div>
+        <div class="card horario-card">
+          <div class="card-icon">🌇</div>
+          <h3>Tardes</h3>
+          <p class="horario-hora">15:30 h — 23:00 h</p>
+        </div>
+      </div>
+      <p class="section-note">Abierto todos los días. Consulta disponibilidad de pistas en la app o por teléfono.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section section-alt">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="grid grid-2">
+        <div class="contacto-info">
+          <ul class="contacto-lista">
+            <li><span class="contacto-icon">📍</span> Av. de Madrid 21, Valdemoro (28342) Madrid</li>
+            <li><span class="contacto-icon">📞</span> <a href="tel:911990885">911 990 885</a> / <a href="tel:688254231">688 254 231</a></li>
+            <li><span class="contacto-icon">✉️</span> <a href="mailto:info@garpadel.com">info@garpadel.com</a></li>
+          </ul>
+          <div class="redes">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+        <form class="contacto-form">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="tu@email.com" required />
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </label>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 GarPadel Indoor — Av. de Madrid 21, Valdemoro (28342) Madrid</p>
+    </div>
+  </footer>
+
+  <script>
+    // Rellena la tabla del ranking desde la hoja de Google Sheets pública.
+    // Si la hoja no está disponible, usa ranking.json (generado por update_ranking.py) como respaldo.
+    const SHEET_ID = "1cK9UNZVl_quX60fpDrsxinpFisbGpExdwvWnBLC5_zo";
+    const SHEET_URL =
+      "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&gid=0";
+
+    function parseCSV(texto) {
+      const filas = [];
+      let fila = [], campo = "", entreComillas = false;
+      for (let i = 0; i < texto.length; i++) {
+        const ch = texto[i];
+        if (entreComillas) {
+          if (ch === '"') {
+            if (texto[i + 1] === '"') { campo += '"'; i++; }
+            else entreComillas = false;
+          } else campo += ch;
+        } else if (ch === '"') {
+          entreComillas = true;
+        } else if (ch === ",") {
+          fila.push(campo); campo = "";
+        } else if (ch === "\n" || ch === "\r") {
+          if (ch === "\r" && texto[i + 1] === "\n") i++;
+          fila.push(campo); campo = "";
+          filas.push(fila); fila = [];
+        } else {
+          campo += ch;
+        }
+      }
+      if (campo !== "" || fila.length) { fila.push(campo); filas.push(fila); }
+      return filas;
+    }
+
+    function pintarRanking(jugadores) {
+      const tbody = document.getElementById("ranking-body");
+      tbody.innerHTML = "";
+      jugadores.forEach((j, i) => {
+        const tr = document.createElement("tr");
+        [i + 1, j.nombre, j.nivel, j.puntuacion].forEach((valor) => {
+          const td = document.createElement("td");
+          td.textContent = valor;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+
+    function cargarDesdeSheet() {
+      return fetch(SHEET_URL)
+        .then((res) => {
+          if (!res.ok) throw new Error(res.statusText);
+          return res.text();
+        })
+        .then((csv) => {
+          const filas = parseCSV(csv).filter((f) => f.some((c) => c.trim() !== ""));
+          const cabecera = filas.shift().map((c) => c.trim().toLowerCase());
+          const col = {
+            nombre: cabecera.indexOf("nombre"),
+            nivel: cabecera.indexOf("nivel"),
+            puntuacion: cabecera.indexOf("puntuacion"),
+          };
+          if (col.nombre < 0 || col.puntuacion < 0) throw new Error("cabecera inesperada");
+          return filas
+            .map((f) => ({
+              nombre: f[col.nombre],
+              nivel: col.nivel >= 0 ? f[col.nivel] : "",
+              puntuacion: parseInt(f[col.puntuacion], 10) || 0,
+            }))
+            .sort((a, b) => b.puntuacion - a.puntuacion);
+        });
+    }
+
+    function cargarDesdeJSON() {
+      return fetch("ranking.json").then((res) => {
+        if (!res.ok) throw new Error(res.statusText);
+        return res.json();
+      });
+    }
+
+    cargarDesdeSheet()
+      .catch(cargarDesdeJSON)
+      .then(pintarRanking)
+      .catch(() => {
+        document.getElementById("ranking-body").innerHTML =
+          '<tr><td colspan="4">No se pudo cargar el ranking.</td></tr>';
+      });
+  </script>
+</body>
+</html>

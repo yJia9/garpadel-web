@@ -1,0 +1,127 @@
+[
+  {
+    "nombre": "Carmen Ramírez",
+    "nivel": "2",
+    "puntuacion": 1251
+  },
+  {
+    "nombre": "David Jiménez",
+    "nivel": "2",
+    "puntuacion": 1124
+  },
+  {
+    "nombre": "Miguel Torres",
+    "nivel": "2",
+    "puntuacion": 1062
+  },
+  {
+    "nombre": "Rubén Molina",
+    "nivel": "1",
+    "puntuacion": 999
+  },
+  {
+    "nombre": "Cristina Ortega",
+    "nivel": "2",
+    "puntuacion": 916
+  },
+  {
+    "nombre": "Alejandro Flores",
+    "nivel": "2",
+    "puntuacion": 907
+  },
+  {
+    "nombre": "Nuria Castro",
+    "nivel": "2",
+    "puntuacion": 906
+  },
+  {
+    "nombre": "Iván Delgado",
+    "nivel": "2",
+    "puntuacion": 854
+  },
+  {
+    "nombre": "Lucía Fernández",
+    "nivel": "2",
+    "puntuacion": 762
+  },
+  {
+    "nombre": "Paula Álvarez",
+    "nivel": "2",
+    "puntuacion": 739
+  },
+  {
+    "nombre": "Laura Ruiz",
+    "nivel": "2",
+    "puntuacion": 679
+  },
+  {
+    "nombre": "Elena Díaz",
+    "nivel": "2",
+    "puntuacion": 658
+  },
+  {
+    "nombre": "Adrián Romero",
+    "nivel": "2",
+    "puntuacion": 572
+  },
+  {
+    "nombre": "Javier López",
+    "nivel": "1",
+    "puntuacion": 471
+  },
+  {
+    "nombre": "Sergio Pérez",
+    "nivel": "2",
+    "puntuacion": 387
+  },
+  {
+    "nombre": "Hugo Medina",
+    "nivel": "2",
+    "puntuacion": 382
+  },
+  {
+    "nombre": "María García",
+    "nivel": "",
+    "puntuacion": 379
+  },
+  {
+    "nombre": "Óscar Vargas",
+    "nivel": "1",
+    "puntuacion": 335
+  },
+  {
+    "nombre": "Daniel Sánchez",
+    "nivel": "2",
+    "puntuacion": 316
+  },
+  {
+    "nombre": "Beatriz Guerrero",
+    "nivel": "2",
+    "puntuacion": 293
+  },
+  {
+    "nombre": "Pablo Gómez",
+    "nivel": "2",
+    "puntuacion": 211
+  },
+  {
+    "nombre": "Sara Moreno",
+    "nivel": "2",
+    "puntuacion": 181
+  },
+  {
+    "nombre": "Marta Navarro",
+    "nivel": "2",
+    "puntuacion": 147
+  },
+  {
+    "nombre": "Ana Rodríguez",
+    "nivel": "2",
+    "puntuacion": 115
+  },
+  {
+    "nombre": "Carlos Martínez",
+    "nivel": "1",
+    "puntuacion": 112
+  }
+]
