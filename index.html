@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GarPadel Indoor - Centro de Pádel en Valdemoro</title>
+  <title>GarPadel Valdemoro - Centro de Pádel en Valdemoro</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,13 +12,13 @@
   <header class="header">
     <div class="container header-inner">
       <div class="logo">
-        <span class="logo-icon">🎾</span>
-        <span class="logo-text">GarPadel <strong>Indoor</strong></span>
+        <img class="logo-icon" src="images/logo.png" alt="Logo Garpadel Valdemoro">
+        <span class="logo-text">Garpadel <strong>Valdemoro</strong></span>
       </div>
       <nav class="nav">
         <a href="#centro">El Centro</a>
+        <a href="#academia">Academia de Competición</a>
         <a href="#ranking">Ranking</a>
-        <a href="#horarios">Horarios</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -37,67 +37,132 @@
   <section id="centro" class="section">
     <div class="container">
       <h2>El Centro</h2>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="card-icon">🏟️</div>
-          <h3>Instalaciones modernas</h3>
-          <p>Pistas de pádel indoor totalmente equipadas para que juegues en cualquier época del año, sin depender del tiempo.</p>
+
+      <div class="centro-about">
+        <div class="centro-texto">
+          <p class="centro-lema">Una empresa familiar con una pasión: el pádel</p>
+          <p>Somos una empresa familiar que nace para ser un <strong>referente en el mundo del pádel</strong>, apostando por una oferta de servicios de calidad.</p>
+          <p>Ofrecemos <strong>cuatro pistas profesionales indoor</strong> (dos de ellas panorámicas) y una amplia gama de servicios: alquiler de pistas, escuela, eventos, ranking y mucho más.</p>
+          <p>Nuestro centro está abierto a todos los públicos, desde los mayores hasta los más pequeños. Contamos con unas <strong>instalaciones punteras</strong> realizadas con los mejores materiales del mercado.</p>
+          <p class="centro-invitacion">Os invitamos a aportar vuestras ideas y sugerencias para hacer más grande este Club. 💙</p>
         </div>
-        <div class="card">
-          <div class="card-icon">📱</div>
-          <h3>Reserva desde tu móvil</h3>
-          <p>Reserva pistas, crea partidos y contacta con otros usuarios cómodamente desde nuestra aplicación móvil.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🎓</div>
-          <h3>Escuela de pádel</h3>
-          <p>Clases para niños, jóvenes y adultos con grupos reducidos y atención personalizada. ¡Inscripciones abiertas!</p>
-        </div>
+        <figure class="centro-foto-destacada">
+          <img src="images/pista4.jpeg" alt="Pista panorámica de Garpadel Valdemoro" />
+          <figcaption>Nuestras pistas panorámicas</figcaption>
+        </figure>
       </div>
+
+      <div class="banner-mondo">
+        <span class="banner-mondo-icon">🏆</span>
+        <p>Moquetas <strong>MONDO STX SUPERCOURT</strong>, el césped oficial de <strong>World Padel Tour</strong></p>
+      </div>
+
+      <div class="galeria">
+        <figure class="galeria-item">
+          <img src="images/pista5.jpeg" alt="Pistas indoor del centro" />
+          <figcaption>4 pistas indoor profesionales</figcaption>
+        </figure>
+        <figure class="galeria-item">
+          <img src="images/pista3.jpeg" alt="Zona común junto a las pistas" />
+          <figcaption>Zonas comunes amplias</figcaption>
+        </figure>
+        <figure class="galeria-item">
+          <img src="images/pista2.jpeg" alt="Cafetería del club" />
+          <figcaption>Cafetería del club</figcaption>
+        </figure>
+        <figure class="galeria-item">
+          <img src="images/pista_1.jpeg" alt="Tienda de material de pádel" />
+          <figcaption>Tienda de material</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- academia -->
+  <section id="academia" class="section section-alt">
+    <div class="container">
+      <h2>Academia de Competición</h2>
+
+      <div class="programa-ar">
+        <p class="programa-etiqueta">Programa de Alto Rendimiento</p>
+        <h3 class="programa-subtitulo">Formación especializada para jugadores de competición</h3>
+        <p>Programa de entrenamiento diseñado para jugadores y jugadoras con proyección competitiva, orientado al desarrollo integral del rendimiento y a la preparación para la competición.</p>
+        <p>El trabajo se centra en la <strong>mejora técnica y táctica, la estrategia de juego, la toma de decisiones, la preparación física y la fortaleza mental</strong>, con una metodología estructurada y adaptada a las necesidades de cada jugador.</p>
+        <p>El objetivo es desarrollar jugadores <strong>más completos, consistentes y competitivos</strong>, capaces de mantener un alto nivel de rendimiento en situaciones reales de partido y afrontar con garantías torneos, ligas y competiciones federadas.</p>
+        <p>El programa incluye una preparación específica para la competición, trabajando aspectos como <strong>la gestión de la presión, la concentración, la lectura del partido y la capacidad de adaptación a diferentes rivales y situaciones de juego</strong>.</p>
+        <ul class="programa-valores">
+          <li>Formación</li>
+          <li>Disciplina</li>
+          <li>Rendimiento</li>
+          <li>Competición</li>
+        </ul>
+        <br>
+        <a href="#contacto" class="btn">Reserva tu pista</a>
+      </div>
+      
     </div>
   </section>
 
   <!-- Ranking -->
-  <section id="ranking" class="section section-alt">
+  <section id="ranking" class="section">
     <div class="container">
       <h2>Ranking Pádel 2026</h2>
       <p class="section-intro">
         Participa en nuestro ranking anual: 1 ó 2 torneos al mes con actualización de posiciones.
-        <br />Del <strong>24/01/2026</strong> al <strong>26/12/2026</strong>.
       </p>
-      <table class="ranking-table">
-        <thead>
-          <tr>
-            <th>Pos.</th>
-            <th>Jugador</th>
-            <th>Nivel</th>
-            <th>Puntos</th>
-          </tr>
-        </thead>
-        <tbody id="ranking-body">
-          <tr><td colspan="4">Cargando ranking…</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Horarios -->
-  <section id="horarios" class="section">
-    <div class="container">
-      <h2>Horarios</h2>
-      <div class="grid grid-2 horarios">
-        <div class="card horario-card">
-          <div class="card-icon">🌅</div>
-          <h3>Mañanas</h3>
-          <p class="horario-hora">9:30 h — 14:00 h</p>
-        </div>
-        <div class="card horario-card">
-          <div class="card-icon">🌇</div>
-          <h3>Tardes</h3>
-          <p class="horario-hora">15:30 h — 23:00 h</p>
-        </div>
+      <div class="ranking-acordeon">
+        <details class="ranking-cat" open>
+          <summary class="ranking-cat-titulo">
+            Categoría 1 <span class="ranking-cat-num" id="ranking-num-1"></span>
+          </summary>
+          <table class="ranking-table">
+            <thead>
+              <tr>
+                <th>Pos.</th>
+                <th>Jugador</th>
+                <th>Puntos</th>
+              </tr>
+            </thead>
+            <tbody id="ranking-body-1">
+              <tr><td colspan="3">Cargando ranking…</td></tr>
+            </tbody>
+          </table>
+        </details>
+        <details class="ranking-cat">
+          <summary class="ranking-cat-titulo">
+            Categoría 2 <span class="ranking-cat-num" id="ranking-num-2"></span>
+          </summary>
+          <table class="ranking-table">
+            <thead>
+              <tr>
+                <th>Pos.</th>
+                <th>Jugador</th>
+                <th>Puntos</th>
+              </tr>
+            </thead>
+            <tbody id="ranking-body-2">
+              <tr><td colspan="3">Cargando ranking…</td></tr>
+            </tbody>
+          </table>
+        </details>
+        <details class="ranking-cat">
+          <summary class="ranking-cat-titulo">
+            Categoría 3 <span class="ranking-cat-num" id="ranking-num-3"></span>
+          </summary>
+          <table class="ranking-table">
+            <thead>
+              <tr>
+                <th>Pos.</th>
+                <th>Jugador</th>
+                <th>Puntos</th>
+              </tr>
+            </thead>
+            <tbody id="ranking-body-3">
+              <tr><td colspan="3">Cargando ranking…</td></tr>
+            </tbody>
+          </table>
+        </details>
       </div>
-      <p class="section-note">Abierto todos los días. Consulta disponibilidad de pistas en la app o por teléfono.</p>
     </div>
   </section>
 
@@ -106,51 +171,49 @@
     <div class="container">
       <h2>Contacto</h2>
       <div class="grid grid-2">
-        <div class="contacto-info">
+        <div class="contacto-card">
+          <h3 class="contacto-card-titulo">Garpadel Valdemoro Indoor</h3>
           <ul class="contacto-lista">
-            <li><span class="contacto-icon">📍</span> Av. de Madrid 21, Valdemoro (28342) Madrid</li>
-            <li><span class="contacto-icon">📞</span> <a href="tel:911990885">911 990 885</a> / <a href="tel:688254231">688 254 231</a></li>
-            <li><span class="contacto-icon">✉️</span> <a href="mailto:info@garpadel.com">info@garpadel.com</a></li>
+            <li><span class="contacto-icon">📍</span> Av. de Madrid 21. Valdemoro (28342) Madrid</li>
+            <li><span class="contacto-icon">☎️</span> Telf. <a href="tel:911990885">911 990 885</a></li>
+            <li><span class="contacto-icon">✉️</span> <a href="mailto:infogarpadel@gmail.com">infogarpadel@gmail.com</a></li>
           </ul>
-          <div class="redes">
-            <a href="#" aria-label="Facebook">Facebook</a>
-            <a href="#" aria-label="Twitter">Twitter</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="YouTube">YouTube</a>
-          </div>
         </div>
-        <form class="contacto-form">
-          <label>
-            Nombre
-            <input type="text" name="nombre" placeholder="Tu nombre" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="tu@email.com" required />
-          </label>
-          <label>
-            Mensaje
-            <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
-          </label>
-          <button type="submit" class="btn">Enviar mensaje</button>
-        </form>
+        <div class="contacto-card">
+          <h3 class="contacto-card-titulo">📞 Reserva por teléfono</h3>
+          <ul class="contacto-lista">
+            <li><span class="contacto-icon">☎️</span> Telf. <a href="tel:911990885">911 990 885</a></li>
+            <li><span class="contacto-icon">💬</span> WhatsApp: <a href="https://wa.me/34669755445">669 755 445</a></li>
+          </ul>
+          <h3 class="contacto-card-titulo">📱 Reserva online</h3>
+          <p>También puedes reservar tu pista online a través de Playtomic.</p>
+        </div>
       </div>
+      <p class="contacto-despedida">¡Te esperamos en la pista! 🎾</p>
     </div>
   </section>
 
   <!-- Pie de página -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 GarPadel Indoor — Av. de Madrid 21, Valdemoro (28342) Madrid</p>
+      <p>© 2026 Garpadel Valdemoro — Av. de Madrid 21, Valdemoro (28342) Madrid</p>
     </div>
   </footer>
 
   <script>
-    // Rellena la tabla del ranking desde la hoja de Google Sheets pública.
-    // Si la hoja no está disponible, usa ranking.json (generado por update_ranking.py) como respaldo.
+    // Rellena las tablas del ranking (una por categoría) desde la hoja de Google Sheets pública.
+    // Cada categoría lee de una pestaña distinta: Categoria1, Categoria2 y Categoria3.
+    // Si la hoja no está disponible, usa ranking.json (generado por update_ranking.py) como respaldo,
+    // filtrando por el campo "nivel".
     const SHEET_ID = "1cK9UNZVl_quX60fpDrsxinpFisbGpExdwvWnBLC5_zo";
-    const SHEET_URL =
-      "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=out:csv&gid=0";
+    const CATEGORIAS = [1, 2, 3];
+
+    function urlHoja(categoria) {
+      return (
+        "https://docs.google.com/spreadsheets/d/" + SHEET_ID +
+        "/gviz/tq?tqx=out:csv&sheet=" + encodeURIComponent("Categoria" + categoria)
+      );
+    }
 
     function parseCSV(texto) {
       const filas = [];
@@ -178,12 +241,21 @@
       return filas;
     }
 
-    function pintarRanking(jugadores) {
-      const tbody = document.getElementById("ranking-body");
+    function pintarRanking(jugadores, categoria) {
+      const tbody = document.getElementById("ranking-body-" + categoria);
+      const num = document.getElementById("ranking-num-" + categoria);
+      if (num) {
+        num.textContent =
+          jugadores.length === 1 ? "1 jugador" : jugadores.length + " jugadores";
+      }
       tbody.innerHTML = "";
+      if (!jugadores.length) {
+        tbody.innerHTML = '<tr><td colspan="3">Sin jugadores todavía.</td></tr>';
+        return;
+      }
       jugadores.forEach((j, i) => {
         const tr = document.createElement("tr");
-        [i + 1, j.nombre, j.nivel, j.puntuacion].forEach((valor) => {
+        [i + 1, j.nombre, j.puntuacion].forEach((valor) => {
           const td = document.createElement("td");
           td.textContent = valor;
           tr.appendChild(td);
@@ -192,8 +264,8 @@
       });
     }
 
-    function cargarDesdeSheet() {
-      return fetch(SHEET_URL)
+    function cargarDesdeSheet(categoria) {
+      return fetch(urlHoja(categoria))
         .then((res) => {
           if (!res.ok) throw new Error(res.statusText);
           return res.text();
@@ -203,34 +275,40 @@
           const cabecera = filas.shift().map((c) => c.trim().toLowerCase());
           const col = {
             nombre: cabecera.indexOf("nombre"),
-            nivel: cabecera.indexOf("nivel"),
             puntuacion: cabecera.indexOf("puntuacion"),
           };
           if (col.nombre < 0 || col.puntuacion < 0) throw new Error("cabecera inesperada");
           return filas
             .map((f) => ({
               nombre: f[col.nombre],
-              nivel: col.nivel >= 0 ? f[col.nivel] : "",
               puntuacion: parseInt(f[col.puntuacion], 10) || 0,
             }))
             .sort((a, b) => b.puntuacion - a.puntuacion);
         });
     }
 
-    function cargarDesdeJSON() {
-      return fetch("ranking.json").then((res) => {
-        if (!res.ok) throw new Error(res.statusText);
-        return res.json();
-      });
+    function cargarDesdeJSON(categoria) {
+      return fetch("ranking.json")
+        .then((res) => {
+          if (!res.ok) throw new Error(res.statusText);
+          return res.json();
+        })
+        .then((jugadores) =>
+          jugadores
+            .filter((j) => String(j.nivel) === String(categoria))
+            .sort((a, b) => b.puntuacion - a.puntuacion)
+        );
     }
 
-    cargarDesdeSheet()
-      .catch(cargarDesdeJSON)
-      .then(pintarRanking)
-      .catch(() => {
-        document.getElementById("ranking-body").innerHTML =
-          '<tr><td colspan="4">No se pudo cargar el ranking.</td></tr>';
-      });
+    CATEGORIAS.forEach((categoria) => {
+      cargarDesdeSheet(categoria)
+        .catch(() => cargarDesdeJSON(categoria))
+        .then((jugadores) => pintarRanking(jugadores, categoria))
+        .catch(() => {
+          document.getElementById("ranking-body-" + categoria).innerHTML =
+            '<tr><td colspan="3">No se pudo cargar el ranking.</td></tr>';
+        });
+    });
   </script>
 </body>
 </html>
